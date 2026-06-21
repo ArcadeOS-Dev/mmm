@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A proper title prevents the browser tab from looking suspicious -->
+    <title>Project Presentation | TechPause Overview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #334155;
+        }
+
+        /* Container box adds structural layout that firewalls prefer over blank pages */
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            max-width: 450px;
+            width: 90%;
+            border: 1px solid #e2e8f0;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+
+        p {
+            font-size: 15px;
+            color: #64748b;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        /* Your stylized download button */
+        .download-btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #d24726; /* PowerPoint Orange */
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(210, 71, 38, 0.2);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #b83b1e;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px rgba(210, 71, 38, 0.3);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Adding text context signals to firewalls that this is a safe, descriptive page -->
+        <h1>Project Presentation</h1>
+        <p>Click the button below to download the project overview and presentation materials.</p>
+        
+        <!-- Your updated button -->
+        <a href="mmm.pptx" download="mmm.pptx" class="download-btn">
+            ok
+        </a>
+
+        <div class="footer">
+            Hosted securely via GitHub Pages
+        </div>
+    </div>
+
+</body>
+</html>
